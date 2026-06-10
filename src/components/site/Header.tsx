@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-new.png";
 
 const NAV = [
   { to: "/", label: "Home" },
@@ -35,15 +35,7 @@ export function Header({ overHero = false }: { overHero?: boolean }) {
     >
       <div className="container-page flex h-20 items-center justify-between">
         <Link to="/" className="flex items-center gap-2.5">
-          <img src={logo} alt="Eco South Partnership" className="h-9 w-auto" />
-          <span
-            className={[
-              "hidden text-[15px] font-bold tracking-tight sm:inline",
-              transparent ? "text-white" : "text-foreground",
-            ].join(" ")}
-          >
-            Eco South <span className="text-primary-glow">Partnership</span>
-          </span>
+          <img src={logo} alt="Eco South Partnership" className="h-12 w-auto" />
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
