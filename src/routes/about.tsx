@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import aboutHero from "@/assets/about-hero.jpg";
-import aboutStory from "@/assets/about-story.jpg";
+import aboutStory from "@/assets/Our Story.jpeg";
 import team1 from "@/assets/team-1.jpg";
 import team2 from "@/assets/team-2.jpg";
 import team3 from "@/assets/team-3.jpg";

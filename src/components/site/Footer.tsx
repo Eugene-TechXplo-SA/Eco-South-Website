@@ -61,7 +61,7 @@ export function Footer() {
       </div>
       <div className="border-t border-white/5">
         <div className="container-page flex flex-col items-start justify-between gap-3 py-6 text-xs text-ink-foreground/55 sm:flex-row sm:items-center">
-          <p>© {new Date().getFullYear()} Eco South Partnership. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Eco South Partnership. All rights reserved.  Developed by <a href="https://www.techxplo.co.za" className='text-primary-glow hover:underline font-bold'>TechXplo</a></p>
           <p className="uppercase tracking-[0.18em]">Sandton · Eastern Cape · South Africa</p>
         </div>
       </div>
