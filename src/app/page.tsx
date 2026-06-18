@@ -8,6 +8,9 @@ import img1041 from "@/assets/IMG_1041.jpeg";
 
 const HERO_VIDEO = "https://cdn.jsdelivr.net/gh/Eugene-TechXplo-SA/videosforwebsites@main/Drone_flying_over_small_town_202606101031.mp4";
 
+const isProd = process.env.NODE_ENV === "production";
+const basePath = isProd ? "/Eco-South-Website" : "";
+
 export const metadata = {
   title: "Eco South Partnership — Reimagine Cities, Towns & Villages",
   description: "Multidisciplinary urban and rural planning consultancy bridging spatial vision and practical project implementation across Southern Africa.",
@@ -220,7 +223,7 @@ export default function HomePage() {
             <div className="flex flex-col items-start rounded-3xl border border-white/10 bg-white/[0.03] p-8 shadow-soft sm:p-10 lg:items-center lg:text-center">
               <div className="w-full flex flex-col items-start lg:items-center">
                 <a
-                  href="/ECO-SOUTH-LAND-DEVELOPMENT-APPLICATION.pdf"
+                  href={`${basePath}/ECO-SOUTH-LAND-DEVELOPMENT-APPLICATION.pdf`}
                   download="ECO-SOUTH-LAND-DEVELOPMENT-APPLICATION.pdf"
                   className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-7 py-4 text-sm font-semibold text-primary-foreground shadow-elevated transition hover:bg-primary-glow lg:w-auto"
                 >
