@@ -161,7 +161,7 @@ export default function HomePage() {
             <div className="max-w-2xl">
               <span className="eyebrow">Selected Work</span>
               <h2 className="mt-3 text-4xl font-bold leading-tight sm:text-5xl">
-                A portfolio spanning <span className="text-primary">spatial plans, GIS, and community.</span>
+                A portfolio spanning <span className="text-primary">our work and community.</span>
               </h2>
             </div>
             <Link
@@ -172,7 +172,7 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="mt-12 grid gap-5 md:grid-cols-6 md:grid-rows-2">
+          <div className="mt-12 grid gap-5 grid-cols-1 auto-rows-[280px] md:grid-cols-6 md:auto-rows-[240px]">
             <FeatureCard
               className="md:col-span-4 md:row-span-2"
               img={img0865.src}
@@ -191,6 +191,46 @@ export default function HomePage() {
               tag="Community"
               title="Social Facilitation Engagement — Mthatha Region"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Land Development Application Section */}
+      <section className="bg-ink/95 text-ink-foreground border-t border-primary/30">
+        <div className="container-page py-24">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+            {/* Left Column: Text Content */}
+            <div>
+              <span className="eyebrow text-primary-glow">Land Development</span>
+              <h2 className="mt-4 text-4xl font-bold leading-tight sm:text-5xl">
+                Apply for Land Development
+              </h2>
+              <p className="mt-6 text-lg leading-relaxed text-ink-foreground/80">
+                Ready to develop your land? Download our application form, complete all sections, and email it back to us with any supporting documents.
+              </p>
+              <p className="mt-6 text-sm font-medium text-ink-foreground/90">
+                Send completed forms to:{" "}
+                <a href="mailto:MawethuP@ecosouth.net.za" className="text-primary-glow hover:underline font-semibold">
+                  MawethuP@ecosouth.net.za
+                </a>
+              </p>
+            </div>
+
+            {/* Right Column: Download Card */}
+            <div className="flex flex-col items-start rounded-3xl border border-white/10 bg-white/[0.03] p-8 shadow-soft sm:p-10 lg:items-center lg:text-center">
+              <div className="w-full flex flex-col items-start lg:items-center">
+                <a
+                  href="/ECO-SOUTH-LAND-DEVELOPMENT-APPLICATION.pdf"
+                  download="ECO-SOUTH-LAND-DEVELOPMENT-APPLICATION.pdf"
+                  className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-7 py-4 text-sm font-semibold text-primary-foreground shadow-elevated transition hover:bg-primary-glow lg:w-auto"
+                >
+                  Download Application Form →
+                </a>
+                <p className="mt-4 text-xs text-ink-foreground/60">
+                  For queries, contact Mawethu Pepu · 067 055 4646
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -242,11 +282,7 @@ function FeatureCard({
         loading="lazy"
         className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/30 to-transparent" />
-      <div className="relative flex h-full flex-col justify-end p-7 text-white">
-        <span className="text-[11px] font-semibold uppercase tracking-[0.22em] text-primary-glow">{tag}</span>
-        <h3 className="mt-2 max-w-md text-xl font-semibold leading-snug sm:text-2xl">{title}</h3>
-      </div>
+      <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/20 to-transparent" />
       <div className="absolute right-5 top-5 inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-white backdrop-blur transition group-hover:bg-primary">
         <ArrowUpRight className="h-4 w-4" />
       </div>

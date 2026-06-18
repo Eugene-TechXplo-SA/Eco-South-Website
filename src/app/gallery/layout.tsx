@@ -3,7 +3,7 @@ import { type ReactNode } from "react";
 
 export const metadata: Metadata = {
   title: "Project Gallery — Eco South Partnership",
-  description: "A curated selection of spatial plans, GIS visualisations, community engagements, and infrastructure assessments from across South Africa.",
+  description: "From township streets to rural landscapes, here is the work that happens when planning meets the ground.",
 };
 
 export default function GalleryLayout({ children }: { children: ReactNode }) {

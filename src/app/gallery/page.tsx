@@ -31,8 +31,7 @@ export default function GalleryPage() {
           <span className="eyebrow">Our Work</span>
           <h1 className="mt-4 text-5xl font-bold leading-[1.05] sm:text-6xl">Project Gallery</h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            A curated selection of spatial plans, GIS visualisations, community
-            engagements, and infrastructure assessments from across South Africa.
+            From township streets to rural landscapes, here is the work that happens when planning meets the ground.
           </p>
         </div>
       </section>
