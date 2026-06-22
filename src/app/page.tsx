@@ -2,9 +2,9 @@ import Link from "next/link";
 import { ArrowRight, ArrowUpRight, Compass, Database, Users, Briefcase, Layers, Route, FileCheck } from "lucide-react";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import heroAerial from "@/assets/hero-aerial.jpg";
-import img0865 from "@/assets/IMG_0865.jpeg";
-import img6767 from "@/assets/IMG_6767.jpeg";
 import img1041 from "@/assets/IMG_1041.jpeg";
+import img6363 from "@/assets/IMG_6363.jpeg";
+import img7081 from "@/assets/IMG_7081.jpeg";
 
 const HERO_VIDEO = "https://cdn.jsdelivr.net/gh/Eugene-TechXplo-SA/videosforwebsites@main/Drone_flying_over_small_town_202606101031.mp4";
 
@@ -178,15 +178,15 @@ export default function HomePage() {
           <div className="mt-12 grid gap-5 grid-cols-1 auto-rows-[280px] md:grid-cols-6 md:auto-rows-[240px]">
             <FeatureCard
               className="md:col-span-4 md:row-span-2"
-              img={img0865.src}
+              img={img6363.src}
               tag="Spatial Planning"
-              title="Strategic Spatial Framework — Sandton District"
+              title="Urban Regeneration Plan — East London CBD"
             />
             <FeatureCard
               className="md:col-span-2"
-              img={img6767.src}
-              tag="GIS & Data"
-              title="GIS Spatial Data Analytics"
+              img={img7081.src}
+              tag="Transport"
+              title="Integrated Transport Corridor"
             />
             <FeatureCard
               className="md:col-span-2"

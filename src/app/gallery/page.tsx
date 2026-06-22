@@ -1,24 +1,20 @@
 "use client";
 
 import { SiteLayout } from "@/components/site/SiteLayout";
-import img0865 from "@/assets/IMG_0865.jpeg";
 import img0889 from "@/assets/IMG_0889.jpeg";
 import img1041 from "@/assets/IMG_1041.jpeg";
 import img5399 from "@/assets/IMG_5399.jpg";
 import img6363 from "@/assets/IMG_6363.jpeg";
 import img6680 from "@/assets/IMG_6680.jpeg";
-import img6767 from "@/assets/IMG_6767.jpeg";
 import img6828 from "@/assets/IMG_6828.jpeg";
 import img7081 from "@/assets/IMG_7081.jpeg";
 
 const PROJECTS = [
-  { img: img0865.src, category: "Spatial Planning", title: "Strategic Spatial Framework", location: "Sandton District, GP", year: "2025" },
   { img: img0889.src, category: "GIS & Data", title: "Advanced GIS Mapping", location: "Eastern Cape Hub", year: "2025" },
   { img: img1041.src, category: "Community", title: "Social Facilitation Engagement", location: "Mthatha Region, EC", year: "2024" },
   { img: img5399.src, category: "Infrastructure", title: "Sub-Surface Mapping Survey", location: "Nelson Mandela Bay, EC", year: "2024" },
   { img: img6363.src, category: "Spatial Planning", title: "Urban Regeneration Plan", location: "East London CBD, EC", year: "2025" },
   { img: img6680.src, category: "Rural Development", title: "Rural Spatial Development", location: "Amadiba Coast, EC", year: "2024" },
-  { img: img6767.src, category: "GIS & Data", title: "GIS Spatial Data Analytics", location: "Gauteng Region", year: "2024" },
   { img: img6828.src, category: "Community", title: "Participatory Stakeholder Forum", location: "Buffalo City, EC", year: "2023" },
   { img: img7081.src, category: "Transport", title: "Integrated Transport Corridor", location: "Johannesburg Metro, GP", year: "2024" },
 ];

@@ -35,3 +35,7 @@ dist-ssr
 .next/
 out/
 
+# Environment variables
+.env
+
+
