@@ -3,43 +3,11 @@ import { ArrowRight } from "lucide-react";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import aboutHero from "@/assets/about-hero.jpg";
 import aboutStory from "@/assets/Our Story.jpeg";
-import teamMawethu from "@/assets/team-mawethu.png";
-import teamNelisiwe from "@/assets/team-nelisiwe.png";
-import teamSimphiwe from "@/assets/team-simphiwe.png";
-import teamSiyabonga from "@/assets/team-siyabonga.png";
-import teamNothemba from "@/assets/team-nothemba.png";
-import teamZimasa from "@/assets/team-zimasa.png";
-import teamLuyolo from "@/assets/team-luyolo.png";
-import teamNdumiso from "@/assets/team-ndumiso.png";
 
 export const metadata = {
   title: "About Us — Eco South Partnership",
   description: "Our story, vision, mission and team of town planners, spatial designers, and social facilitators.",
 };
-
-const LEADERSHIP_TEAM = [
-  {
-    img: teamMawethu,
-    name: "Mawethu Pepu",
-    role: "Principal Professional Planner",
-    tag: "Leadership & Strategic Direction",
-    credentials: "SACPLAN Registered",
-    bio: "Oversees all high-level project frameworks, ensuring every spatial intervention is legally robust, ethically grounded, and strategically aligned with national and provincial development goals."
-  }
-];
-
-const PLANNING_TEAM = [
-  { img: teamNelisiwe, name: "Nelisiwe Ngcobo", role: "Town Planner", details: "Statutory Applications, Urban Design & Frameworks, Policy Analysis" },
-  { img: teamSimphiwe, name: "Simphiwe Mnguni", role: "Town Planner", details: "Statutory Applications, Urban Design & Frameworks, Policy Analysis" },
-  { img: teamSiyabonga, name: "Siyabonga Ncube", role: "Town Planner", details: "Statutory Applications, Urban Design & Frameworks, Policy Analysis" }
-];
-
-const SOCIAL_TEAM = [
-  { img: teamNothemba, name: "Nothemba Pepu", role: "Community & Social Facilitation" },
-  { img: teamZimasa, name: "Zimasa Ncobela", role: "Community & Social Facilitation" },
-  { img: teamLuyolo, name: "Luyolo Joja", role: "Community & Social Facilitation" },
-  { img: teamNdumiso, name: "Ndumiso Pepu", role: "Community & Social Facilitation" }
-];
 
 export default function AboutPage() {
   return (
@@ -115,97 +83,138 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team */}
+      {/* Team Organogram Section */}
       <section className="bg-background border-t border-border">
         <div className="container-page py-24">
-          <div className="max-w-2xl">
-            <span className="eyebrow">The Partnership</span>
+          <div className="mx-auto max-w-2xl text-center">
+            <span className="eyebrow">The Partnership Structure</span>
             <h2 className="mt-3 text-4xl font-bold leading-tight sm:text-5xl">Our Specialist Team</h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              A multidisciplinary practice combining strategic planning, urban design, and social facilitation.
+              A multidisciplinary practice structured to bridge high-level spatial vision with practical project implementation.
             </p>
           </div>
 
-          {/* Leadership & Strategic Direction */}
-          <div className="mt-16">
-            <h3 className="text-xs font-semibold uppercase tracking-[0.25em] text-primary border-b border-primary/20 pb-3 mb-8">
-              Leadership & Strategic Direction
-            </h3>
-            {LEADERSHIP_TEAM.map((m) => (
-              <div key={m.name} className="grid gap-8 rounded-3xl border border-border bg-card p-6 md:grid-cols-12 md:p-10 items-center shadow-sm">
-                <div className="md:col-span-4 overflow-hidden rounded-2xl aspect-[4/5] shadow-elevated">
-                  <img src={m.img.src} alt={m.name} className="h-full w-full object-cover transition duration-700 hover:scale-105" />
-                </div>
-                <div className="md:col-span-8 flex flex-col justify-center">
-                  <div className="flex flex-wrap gap-2 items-center">
+          <div className="mt-20 flex flex-col items-center">
+            {/* Level 1: Mawethu (Director) */}
+            <div className="flex flex-col items-center">
+              <div className="group relative rounded-2xl border border-primary/20 bg-card p-6 md:p-8 text-center shadow-soft transition-all duration-300 hover:border-primary hover:shadow-elevated max-w-md">
+                <span className="inline-flex rounded-full bg-primary/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-primary">
+                  Leadership
+                </span>
+                <h3 className="mt-4 text-2xl font-bold text-foreground">Mawethu Pepu</h3>
+                <p className="text-sm font-semibold text-primary mt-1">Director / Principal Professional Planner</p>
+                <p className="text-[11px] text-muted-foreground mt-0.5">SACPLAN Registered</p>
+                <p className="mt-4 text-xs leading-relaxed text-muted-foreground">
+                  Oversees all high-level project frameworks, ensuring every spatial intervention is legally robust, ethically grounded, and strategically aligned.
+                </p>
+              </div>
+            </div>
+
+            {/* Vertical connector line (Level 1 -> Level 2) */}
+            <div className="h-10 w-px bg-primary/25 md:h-12"></div>
+
+            {/* Level 2: Two Directors Side-by-Side */}
+            <div className="relative w-full max-w-4xl">
+              {/* Horizontal line for desktop branching */}
+              <div className="hidden md:block absolute top-0 left-[25%] right-[25%] h-px bg-primary/25"></div>
+              
+              <div className="grid gap-8 md:grid-cols-2 md:pt-8">
+                {/* Director 1 (Left branch) */}
+                <div className="flex flex-col items-center relative">
+                  {/* Vertical branch line for desktop */}
+                  <div className="hidden md:block absolute -top-8 w-px h-8 bg-primary/25"></div>
+                  
+                  <div className="group w-full max-w-sm rounded-2xl border border-primary/20 bg-card p-6 text-center shadow-soft transition-all duration-300 hover:border-primary hover:shadow-elevated">
                     <span className="inline-flex rounded-full bg-primary/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-primary">
-                      {m.tag}
+                      Leadership
                     </span>
-                    <span className="inline-flex rounded-full bg-emerald-500/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-700">
-                      {m.credentials}
-                    </span>
+                    <h3 className="mt-4 text-xl font-bold text-foreground">Luyolo Joja</h3>
+                    <p className="text-sm font-semibold text-primary mt-1">Director</p>
+                    <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+                      Coordinates strategic community engagement and project synchronization across regional operations.
+                    </p>
                   </div>
-                  <h4 className="mt-4 text-3xl font-bold text-foreground">{m.name}</h4>
-                  <p className="text-lg font-medium text-primary mt-1">{m.role}</p>
-                  <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-                    {m.bio}
-                  </p>
+                </div>
+
+                {/* Director 2 (Right branch) */}
+                <div className="flex flex-col items-center relative mt-8 md:mt-0">
+                  {/* Vertical branch line for desktop */}
+                  <div className="hidden md:block absolute -top-8 w-px h-8 bg-primary/25"></div>
+                  
+                  <div className="group w-full max-w-sm rounded-2xl border border-primary/20 bg-card p-6 text-center shadow-soft transition-all duration-300 hover:border-primary hover:shadow-elevated">
+                    <span className="inline-flex rounded-full bg-primary/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-primary">
+                      Leadership
+                    </span>
+                    <h3 className="mt-4 text-xl font-bold text-foreground">Nothemba Pepu</h3>
+                    <p className="text-sm font-semibold text-primary mt-1">Director</p>
+                    <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+                      Leads participatory stakeholder forums and drives peri-urban social development planning.
+                    </p>
+                  </div>
                 </div>
               </div>
-            ))}
-          </div>
-
-          {/* Spatial Planning & Design Core */}
-          <div className="mt-20">
-            <h3 className="text-xs font-semibold uppercase tracking-[0.25em] text-primary border-b border-primary/20 pb-3 mb-8">
-              Spatial Planning & Design Core
-            </h3>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {PLANNING_TEAM.map((m) => (
-                <article key={m.name} className="group relative overflow-hidden rounded-3xl bg-ink shadow-md">
-                  <img
-                    src={m.img.src}
-                    alt={m.name}
-                    loading="lazy"
-                    className="aspect-[4/5] w-full object-cover transition duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent" />
-                  <div className="absolute inset-x-0 bottom-0 p-6 text-white">
-                    <span className="inline-flex rounded-full bg-primary/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em]">
-                      {m.role}
-                    </span>
-                    <h4 className="mt-3 text-xl font-semibold">{m.name}</h4>
-                    <p className="text-xs text-white/70 mt-1.5 leading-relaxed">{m.details}</p>
-                  </div>
-                </article>
-              ))}
             </div>
-          </div>
 
-          {/* Social Engineering & Field Operations */}
-          <div className="mt-20">
-            <h3 className="text-xs font-semibold uppercase tracking-[0.25em] text-primary border-b border-primary/20 pb-3 mb-8">
-              Social Engineering & Field Operations
-            </h3>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {SOCIAL_TEAM.map((m) => (
-                <article key={m.name} className="group relative overflow-hidden rounded-3xl bg-ink shadow-md">
-                  <img
-                    src={m.img.src}
-                    alt={m.name}
-                    loading="lazy"
-                    className="aspect-[4/5] w-full object-cover transition duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent" />
-                  <div className="absolute inset-x-0 bottom-0 p-6 text-white">
-                    <span className="inline-flex rounded-full bg-primary/95 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em]">
-                      Field Operations
-                    </span>
-                    <h4 className="mt-3 text-lg font-semibold">{m.name}</h4>
-                    <p className="text-xs text-white/75 mt-1">{m.role}</p>
+            {/* Vertical connector line (Level 2 -> Level 3) */}
+            <div className="h-10 w-px bg-primary/25 md:h-12"></div>
+
+            {/* Level 3: Two functional areas (Town Planning and Social Facilitation) */}
+            <div className="relative w-full max-w-5xl">
+              {/* Horizontal line for desktop branching */}
+              <div className="hidden md:block absolute top-0 left-[25%] right-[25%] h-px bg-primary/25"></div>
+
+              <div className="grid gap-12 md:grid-cols-2 md:pt-8">
+                {/* Column 1: Town Planning */}
+                <div className="flex flex-col items-center relative">
+                  {/* Vertical branch line for desktop */}
+                  <div className="hidden md:block absolute -top-8 w-px h-8 bg-primary/25"></div>
+                  
+                  <div className="w-full max-w-md rounded-3xl border border-border bg-card p-6 shadow-soft relative overflow-hidden transition-all duration-300 hover:shadow-elevated">
+                    <div className="absolute top-0 left-0 w-1.5 h-full bg-primary"></div>
+                    <h3 className="text-xs font-semibold uppercase tracking-[0.22em] text-primary border-b border-primary/10 pb-3 mb-6">
+                      Town Planning Core
+                    </h3>
+                    <div className="space-y-4">
+                      {[
+                        { name: "Nelisiwe Ngcobo", role: "Town Planner", details: "Statutory Applications, Urban Design & Policy" },
+                        { name: "Siyabonga Ncube", role: "Town Planner", details: "GIS Mapping, Frameworks & Development" },
+                        { name: "Simphiwe Mnguni", role: "Town Planner", details: "Land Use Management & Statutory Compliance" },
+                      ].map((m) => (
+                        <div key={m.name} className="group p-4 rounded-xl border border-border/60 bg-background/50 hover:bg-background hover:border-primary/20 transition-all duration-300">
+                          <h4 className="font-semibold text-foreground text-sm">{m.name}</h4>
+                          <p className="text-[11px] font-medium text-primary mt-0.5">{m.role}</p>
+                          <p className="text-[10px] text-muted-foreground mt-1.5 leading-relaxed">{m.details}</p>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                </article>
-              ))}
+                </div>
+
+                {/* Column 2: Social Facilitation */}
+                <div className="flex flex-col items-center relative mt-12 md:mt-0">
+                  {/* Vertical branch line for desktop */}
+                  <div className="hidden md:block absolute -top-8 w-px h-8 bg-primary/25"></div>
+                  
+                  <div className="w-full max-w-md rounded-3xl border border-border bg-card p-6 shadow-soft relative overflow-hidden transition-all duration-300 hover:shadow-elevated">
+                    <div className="absolute top-0 left-0 w-1.5 h-full bg-emerald-600"></div>
+                    <h3 className="text-xs font-semibold uppercase tracking-[0.22em] text-emerald-700 border-b border-emerald-600/10 pb-3 mb-6">
+                      Social Facilitation Core
+                    </h3>
+                    <div className="space-y-4">
+                      {[
+                        { name: "Zimasa Ncobela", role: "Social Facilitator", details: "Community Engagement & Participatory Forums" },
+                        { name: "Ndumiso Pepu", role: "Social Facilitator", details: "Stakeholder Relations & Field Operations" },
+                      ].map((m) => (
+                        <div key={m.name} className="group p-4 rounded-xl border border-border/60 bg-background/50 hover:bg-background hover:border-emerald-600/20 transition-all duration-300">
+                          <h4 className="font-semibold text-foreground text-sm">{m.name}</h4>
+                          <p className="text-[11px] font-medium text-emerald-700 mt-0.5">{m.role}</p>
+                          <p className="text-[10px] text-muted-foreground mt-1.5 leading-relaxed">{m.details}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
