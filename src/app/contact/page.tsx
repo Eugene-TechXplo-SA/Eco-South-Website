@@ -160,9 +160,7 @@ export default function ContactPage() {
           <aside className="relative overflow-hidden rounded-3xl bg-ink p-8 text-ink-foreground sm:p-10">
             <div className="absolute inset-0 opacity-30 [background-image:radial-gradient(circle_at_80%_0%,color-mix(in_oklab,var(--primary-glow)_60%,transparent),transparent_60%)]" />
             <div className="relative">
-              <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-white/10 text-primary-glow">
-                <Leaf className="h-5 w-5" />
-              </span>
+              
               <h2 className="mt-6 text-3xl font-bold">Eco South Partnership</h2>
               <p className="mt-1 text-sm text-ink-foreground/65">Reg: 2014/08434/08</p>
 
