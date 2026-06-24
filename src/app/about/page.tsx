@@ -115,14 +115,14 @@ export default function AboutPage() {
 
             {/* Level 2: Two Directors Side-by-Side */}
             <div className="relative w-full max-w-4xl">
-              {/* Horizontal line for desktop branching */}
-              <div className="hidden md:block absolute top-0 left-[25%] right-[25%] h-px bg-primary/25"></div>
+              {/* Horizontal line for desktop branching (top) */}
+              <div className="hidden md:block absolute top-0 left-[calc(25%-8px)] right-[calc(25%-8px)] h-px bg-primary/25"></div>
               
-              <div className="grid gap-8 md:grid-cols-2 md:pt-8">
+              <div className="grid gap-8 md:grid-cols-2 md:py-8">
                 {/* Director 1 (Left branch) */}
                 <div className="flex flex-col items-center relative">
-                  {/* Vertical branch line for desktop */}
-                  <div className="hidden md:block absolute -top-8 w-px h-8 bg-primary/25"></div>
+                  {/* Vertical branch line for desktop (top) */}
+                  <div className="hidden md:block absolute -top-8 left-1/2 -translate-x-1/2 w-px h-8 bg-primary/25"></div>
                   
                   <div className="group w-full max-w-sm rounded-2xl border border-primary/20 bg-card p-6 text-center shadow-soft transition-all duration-300 hover:border-primary hover:shadow-elevated">
                     <span className="inline-flex rounded-full bg-primary/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-primary">
@@ -134,12 +134,15 @@ export default function AboutPage() {
                       Coordinates strategic community engagement and project synchronization across regional operations.
                     </p>
                   </div>
+
+                  {/* Vertical branch line for desktop (bottom) */}
+                  <div className="hidden md:block absolute -bottom-8 left-1/2 -translate-x-1/2 w-px h-8 bg-primary/25"></div>
                 </div>
 
                 {/* Director 2 (Right branch) */}
                 <div className="flex flex-col items-center relative mt-8 md:mt-0">
-                  {/* Vertical branch line for desktop */}
-                  <div className="hidden md:block absolute -top-8 w-px h-8 bg-primary/25"></div>
+                  {/* Vertical branch line for desktop (top) */}
+                  <div className="hidden md:block absolute -top-8 left-1/2 -translate-x-1/2 w-px h-8 bg-primary/25"></div>
                   
                   <div className="group w-full max-w-sm rounded-2xl border border-primary/20 bg-card p-6 text-center shadow-soft transition-all duration-300 hover:border-primary hover:shadow-elevated">
                     <span className="inline-flex rounded-full bg-primary/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-primary">
@@ -151,8 +154,14 @@ export default function AboutPage() {
                       Leads participatory stakeholder forums and drives peri-urban social development planning.
                     </p>
                   </div>
+
+                  {/* Vertical branch line for desktop (bottom) */}
+                  <div className="hidden md:block absolute -bottom-8 left-1/2 -translate-x-1/2 w-px h-8 bg-primary/25"></div>
                 </div>
               </div>
+
+              {/* Horizontal line for desktop branching (bottom) */}
+              <div className="hidden md:block absolute bottom-0 left-[calc(25%-8px)] right-[calc(25%-8px)] h-px bg-primary/25"></div>
             </div>
 
             {/* Vertical connector line (Level 2 -> Level 3) */}
@@ -161,13 +170,13 @@ export default function AboutPage() {
             {/* Level 3: Two functional areas (Town Planning and Social Facilitation) */}
             <div className="relative w-full max-w-5xl">
               {/* Horizontal line for desktop branching */}
-              <div className="hidden md:block absolute top-0 left-[25%] right-[25%] h-px bg-primary/25"></div>
+              <div className="hidden md:block absolute top-0 left-[calc(25%-12px)] right-[calc(25%-12px)] h-px bg-primary/25"></div>
 
               <div className="grid gap-12 md:grid-cols-2 md:pt-8">
                 {/* Column 1: Town Planning */}
                 <div className="flex flex-col items-center relative">
                   {/* Vertical branch line for desktop */}
-                  <div className="hidden md:block absolute -top-8 w-px h-8 bg-primary/25"></div>
+                  <div className="hidden md:block absolute -top-8 left-1/2 -translate-x-1/2 w-px h-8 bg-primary/25"></div>
                   
                   <div className="w-full max-w-md rounded-3xl border border-border bg-card p-6 shadow-soft relative overflow-hidden transition-all duration-300 hover:shadow-elevated">
                     <div className="absolute top-0 left-0 w-1.5 h-full bg-primary"></div>
@@ -193,7 +202,7 @@ export default function AboutPage() {
                 {/* Column 2: Social Facilitation */}
                 <div className="flex flex-col items-center relative mt-12 md:mt-0">
                   {/* Vertical branch line for desktop */}
-                  <div className="hidden md:block absolute -top-8 w-px h-8 bg-primary/25"></div>
+                  <div className="hidden md:block absolute -top-8 left-1/2 -translate-x-1/2 w-px h-8 bg-primary/25"></div>
                   
                   <div className="w-full max-w-md rounded-3xl border border-border bg-card p-6 shadow-soft relative overflow-hidden transition-all duration-300 hover:shadow-elevated">
                     <div className="absolute top-0 left-0 w-1.5 h-full bg-emerald-600"></div>
