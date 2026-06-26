@@ -212,7 +212,7 @@ export default function AboutPage() {
                       {[
                         { name: "Nelisiwe Ngcobo", role: "Town Planner", details: "Land use management, Policy formulation, and compliance " },
                         { name: "Siyabonga Ncube", role: "Town Planner", details: "GIS mapping, Land Use Management, Policy Formulation and compliance " },
-                        { name: "Simphiwe Mnguni", role: "Town Planner", details: "Urban design, Land use management policy formulation, and compliance, Operations management" },
+                        { name: "Simphiwe Mnguni", role: "Town Planner", details: "Urban design, Land use management, Policy formulation, and Operations management" },
                       ].map((m) => (
                         <div key={m.name} className="group p-4 rounded-xl border border-border/60 bg-background/50 hover:bg-background hover:border-primary/20 transition-all duration-300">
                           <h4 className="font-semibold text-foreground text-sm">{m.name}</h4>
